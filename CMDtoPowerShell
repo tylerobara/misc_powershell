@@ -22,18 +22,12 @@ Process
 	
 
 General
+	help or /?		-> 	Get-Help {command}
 	copy			->	Copy-Item
 	'touch' or new		-> 	New-Item
 	wmic {command}		->	Get-WmiObject win32_{command}
 	findstr			->	Get-Child Item {path} | Select-String -Pattern "{string}"
 	robocopy		->	Copy-Item -Path {path} -Destination {destination}  #remote destination '\\10.0.0.50\c$\....'
 	certutil -hashfile	->	Get-FileHash #note://Win8+ only
-	
-
-	
-
-
-
-
-
-
+	doskey /history		->	Get-History or history
+	#full terminal history	->	(Start/Stop)-Transaction
