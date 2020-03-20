@@ -31,6 +31,10 @@ General
 	certutil -hashfile	->	Get-FileHash #note://Win8+ only
 	doskey /history		->	Get-History or history
 	#full terminal history	->	(Start/Stop)-Transaction
+	reg query		->	Get-ChildItem {eg HKLM:\} or Get-ItemProperty {HKLM:\Software\Microsoft\Windows\currentVersion\Run}
+	reg delete		-> 	Remove-Item OR Remove-ItemProperty
+	reg add			->	New-Item OR New-ItemProperty
+
 
 ################################
 Legend
