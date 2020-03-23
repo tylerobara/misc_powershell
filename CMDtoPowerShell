@@ -16,9 +16,14 @@ Networking
 	list remote shares	->	get-WmiObject -class Win32_Share -computer {hostname or ip}
 	ssh			->	New-PSSession -ComputerName {hostname or ip} #note://set to a variable ($session=New-PSSession ...) so it call be called later, see 'scp/Copy-Item'
 	scp			->	Copy-Item -Path {path} -ToSession {session} -Destination '{destination path}' #note://{session} should be called as variable, see 'New-PSSession'
+	ipconfig		->	Get-NetIPConfiguration (Get-NetIPAddress)
+	#DNSCLientCache		->	Get-DNSClientCache
+	netsh interface portproxy->	Nothing?!?
 
-Process
+Process/Services/Tasks
 	tasklist		->	Get-Process
+	sc			->	Get-Service
+	schtasks		->	Get-ScheduledTask
 	
 
 General
@@ -34,6 +39,7 @@ General
 	reg query		->	Get-ChildItem {eg HKLM:\} or Get-ItemProperty {HKLM:\Software\Microsoft\Windows\currentVersion\Run}
 	reg delete		-> 	Remove-Item OR Remove-ItemProperty
 	reg add			->	New-Item OR New-ItemProperty
+	#hotfixes		-> 	Get-Hotfix
 
 
 ################################
