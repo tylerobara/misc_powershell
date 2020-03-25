@@ -1,7 +1,8 @@
 PowerShell Equivalents
 
 Networking
-	ipconfig		->	Get-NetIPConfiguration OR Get-NetIPAddress
+	ipconfig		->	```powershell
+	Get-NetIPConfiguration OR Get-NetIPAddress```
 	ping 			->	Test-NetConnection -ComputerName
 	#test port connect	->	Test-NetConnection "Hostname or IP" -Port #
 	tracert			-> 	Test-NetConnection "Hostname or IP" -traceroute
