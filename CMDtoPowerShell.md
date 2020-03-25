@@ -1,6 +1,6 @@
-##PowerShell Equivalents
+## PowerShell Equivalents
 
-###Networking
+### Networking
 	
 	ipconfig		->	```Get-NetIPConfiguration OR Get-NetIPAddress```
 	
@@ -38,7 +38,7 @@
 	
 	netsh interface portproxy->	Nothing?!?
 
-###Process/Services/Tasks
+### Process/Services/Tasks
 	
 	tasklist		->	Get-Process
 	
@@ -47,7 +47,7 @@
 	schtasks		->	Get-ScheduledTask
 	
 
-###General
+### General
 	
 	help or /?		-> 	Get-Help {command}
 	
