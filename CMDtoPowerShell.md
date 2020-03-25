@@ -2,7 +2,7 @@
 
 ### Networking
 	
-	ipconfig		->	```Get-NetIPConfiguration OR Get-NetIPAddress```
+	ipconfig		->	`Get-NetIPConfiguration OR Get-NetIPAddress`
 	
 	ping 			->	Test-NetConnection -ComputerName
 	
